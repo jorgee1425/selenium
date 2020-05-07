@@ -1,0 +1,46 @@
+package com.qualitystream.tutorial;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Before;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class GoogleSearchTest {
+	
+	
+	
+private WebDriver driver;//creamos un objeto webdriver
+
+
+@Before
+public void setUp() {
+	
+System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver");
+driver =new ChromeDriver();	//declaramos el objeto driver de tipo chrome driver
+driver.manage().window().maximize();
+driver.get("http://www.google.com");
+	
+}
+
+@Test
+public void testGooglePage() {
+	
+	WebElement searchbox=driver.findElement(By.name("q"));
+	searchbox.clear();
+	searchbox.sendKeys("texto de busqueda en google");
+	searchbox.submit();
+	//AQUI HACEMOS UNA ESPERA IMPLICITA
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	
+	
+	
+}
+
+
+
+
+}

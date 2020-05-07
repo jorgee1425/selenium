@@ -1,0 +1,24 @@
+package com.qualitystream.tutorial;
+
+import org.junit.Before;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GoogleSearchTest {
+	
+	
+	
+private WebDriver driver;//creamos un objeto webdriver
+
+
+@Before
+public void setUp() {
+	
+System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver");
+driver =new ChromeDriver();	//declaramos el objeto driver de tipo chrome driver
+
+	
+}
+
+
+}
