@@ -11,8 +11,10 @@ public class Demo {
 		//invoke the file
 		System.setProperty("webdriver.chrome.driver", "/Users/jorge.padilla/Downloads/chromedriver/chromedriver");
 		WebDriver driver=new ChromeDriver();
-		driver.manage().window().maximize();
+	    driver.get("https://www.google.com");
+		System.out.println(driver.getTitle());
 		
+		if (driver.getTitle().equals("Google")) System.out.println("esta en la pagina correcta");
 		
 		
 	//	webdriver.chrome.driver
