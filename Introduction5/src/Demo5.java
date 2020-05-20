@@ -5,6 +5,9 @@ public class Demo5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		//webdriver.gecko.driver
+		//webdriver.ie.driver
 		System.setProperty("webdriver.chrome.driver", "/Users/jorge.padilla/Downloads/chromedriver/chromedriver");
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://www.google.com");

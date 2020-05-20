@@ -1,4 +1,4 @@
-package com.qualitystream.testng;  //esta es nuetra primera clase de testNG
+ package com.qualitystream.testng;  //esta es nuetra primera clase de testNG
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
