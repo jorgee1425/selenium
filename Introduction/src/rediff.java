@@ -39,6 +39,11 @@ public class rediff {
 		 // Logib button
 		 // <input type="submit" name="proceed" value="Sign in" title="Sign in" tabindex="4" class="signinbtn">
 		 driver.findElement(By.xpath("//input[@type='submit']")).click();
+		 
+		 //using parenth child relationship
+		 /* supusse taht there is not an static attribute when the content is keeping changing
+		  * if need write and xpath to it, so we needs define an xpatgh to the parent using tag names
+		  * */
 	
 	
 	
