@@ -32,11 +32,11 @@ public class StaticDropDrown {
 		*/
 		
 		
-	/*	
-	Select s=new Select(driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency")));
-	 s.selectByIndex(2);
-     s.selectByVisibleText("USD");
-     s.selectByValue("AED");    */
+		/*
+		 * Select s=new
+		 * Select(driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency")));
+		 * s.selectByIndex(2); s.selectByVisibleText("USD"); s.selectByValue("AED");
+		 */
 		
 		
 		
